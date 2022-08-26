@@ -1,0 +1,79 @@
+.navcontainer {
+  width: 100%;
+  height: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.35rem;
+}
+
+.navlogo {
+  font-size: 3rem;
+  opacity: 0.5;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+.navlogo:hover {
+  opacity: 1;
+}
+
+.navlogo a {
+  color: #f7f7f7;
+}
+
+.navcontent {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  padding: 1rem;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
+
+.navcontent:hover {
+  opacity: 1;
+}
+
+.navcontent a {
+  color: #f7f7f7;
+}
+
+.badge {
+  margin: 2rem 0 2rem 0.35rem;
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navcontainer {
+    height: 10rem;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .navcontent {
+    font-size: 1rem;
+  }
+}
