@@ -2,18 +2,7 @@
   font-family: Syne;
   font-weight: 500;
   font-style: normal;
-  src: local("../fonts/Syne/Syne-ExtraBold.ttf");
-}
-
-@font-face {
-  font-family: HS;
-  font-weight: 700;
-  font-style: normal;
-  src: local("../fonts/Syne/Syne-ExtraBold.ttf");
-}
-
-h1 {
-  /* font-family: HS; */
+  src: local("./fonts/Syne/Syne-ExtraBold.ttf") format("truetype");
 }
 
 * {
@@ -21,7 +10,7 @@ h1 {
   padding: 0;
   box-sizing: border-box;
   height: 100%;
-  font-family: Syne;
+  font-family: Syne, serif;
   list-style: none;
   text-decoration: none;
 }
@@ -44,6 +33,6 @@ body {
     #404342
   );
   background-attachment: fixed;
-  
+
   color: #f7f7f7;
 }

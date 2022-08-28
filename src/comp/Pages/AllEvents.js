@@ -5,6 +5,7 @@ import classes from "../style/AllEvents.module.css";
 import { useState } from "react";
 
 import EventList from "../EventList";
+import Spinner from "../UI/Spinner";
 
 const AllEvents = () => {
   const [event, setEvent] = useState([]);
@@ -39,7 +40,7 @@ const AllEvents = () => {
 
   return (
     <div className={classes.maincontainer}>
-      {loading && <p>Loading...</p>}
+      {loading && <Spinner />}
       {!loading && <EventList event={event} />}
     </div>
   );

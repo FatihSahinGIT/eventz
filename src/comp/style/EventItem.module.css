@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 4rem;
 }
@@ -12,19 +12,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 0 20px 0;
-  width: 100%;
-  padding: 3rem;
+  padding: 1rem;
   gap: 3rem;
-  margin-bottom: 5rem;
-  max-height: max-content;
-  background: rgba(236, 236, 236, 0.103);
+  margin-bottom: 8rem;
+  height: max-content;
+  background: rgba(236, 236, 236, 0.081);
   border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+  width: 400px;
+}
+
+.eventcontainer:hover {
+  transform: scale(1.075);
+}
+
+.eventcontainer a {
+  color: #f7f7f7;
+  border: 2px solid #f7f7f7;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 15px;
 }
 
 .eventcontainer h1 {
-  max-width: 420px;
+  max-width: 290px;
   font-size: 2rem;
+  text-align: center;
 }
 
 .eventcontainer p {
@@ -34,8 +47,9 @@
 
 .eventcontainer img {
   height: auto;
-  max-width: 380px;
-  border-radius: 8px;
+  max-width: 360px;
+  padding: 1rem;
+  border-radius: 20px;
 }
 
 .eventcontainer button {
@@ -50,14 +64,19 @@
 
 @media screen and (max-width: 767px) {
   .eventcontainer {
-    width: 100%;
+    width: 280px;
+    max-width: 100%;
   }
 
   .eventitem img {
-    max-width: 180px;
+    max-width: 240px;
   }
 
   .eventitem h1 {
     font-size: 1.25rem;
+  }
+
+  .eventitem button {
+    margin-bottom: 1rem;
   }
 }

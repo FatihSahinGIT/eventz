@@ -34,16 +34,16 @@
   font-size: 1.25rem;
   padding: 1rem;
   font-weight: bold;
-  opacity: 0.5;
-  transition: all 0.4s ease;
-}
-
-.navcontent:hover {
-  opacity: 1;
 }
 
 .navcontent a {
   color: #f7f7f7;
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
+
+.navcontainer a:hover {
+  opacity: 1;
 }
 
 .badge {
@@ -72,7 +72,7 @@
     gap: 2rem;
     justify-content: center;
   }
-  
+
   .navcontent {
     font-size: 1rem;
   }

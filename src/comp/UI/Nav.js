@@ -19,7 +19,7 @@ const Nav = () => {
       <nav>
         <ul className={classes.navcontent}>
           <li>
-            <Link to="/">All Events</Link>
+            <Link to="/eventz">All Events</Link>
           </li>
           <li>
             <Link to="/favorite">

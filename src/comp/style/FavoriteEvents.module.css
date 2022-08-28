@@ -1,0 +1,15 @@
+.favmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.nofav {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.nofav a {
+  color: #b54545;
+}

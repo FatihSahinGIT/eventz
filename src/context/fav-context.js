@@ -5,6 +5,7 @@ const FavContext = createContext({
   favAmount: 0,
   addFav: (favEvent) => {},
   removeFav: (id) => {},
+  checkFav: (favEvent) => {},
 });
 
 export const FavContextProvider = (props) => {
@@ -22,11 +23,16 @@ export const FavContextProvider = (props) => {
     });
   };
 
+  const checkFavHandler = (id) => {
+    return fav.some((event) => event.id === id);
+  };
+
   const context = {
     fav: fav,
     favAmount: fav.length,
     addFav: addFavHandler,
     removeFav: removeFavHandler,
+    checkFav: checkFavHandler,
   };
 
   return (

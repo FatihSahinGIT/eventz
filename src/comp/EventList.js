@@ -12,6 +12,9 @@ const EventList = (props) => {
             title={event.title}
             img={event.flyerFront}
             date={event.date}
+            address={event.venue.direction}
+            start={event.startTime}
+            end={event.endTime}
           />
         );
       })}
