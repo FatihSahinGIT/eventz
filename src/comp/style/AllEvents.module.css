@@ -7,3 +7,25 @@
   margin: 5rem;
 }
 
+.navsearchbar {
+  background: #f7f7f72e;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  padding: 0.55rem;
+  height: max-content;
+  margin-bottom: 2rem;
+}
+
+input,
+select {
+  color: #f7f7f7;
+}
+
+.navsearchbar::placeholder {
+  color: #f7f7f7aa;
+}
+
+.navsearchbar input:active {
+  border: red;
+}

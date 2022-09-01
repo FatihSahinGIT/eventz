@@ -13,7 +13,9 @@ const Nav = () => {
   return (
     <header className={classes.navcontainer}>
       <div>
-        <h1 className={classes.navlogo}><Link to="/">eventz</Link></h1>
+        <h1 className={classes.navlogo}>
+          <Link to="/">eventz</Link>
+        </h1>
       </div>
 
       <nav>
@@ -23,7 +25,8 @@ const Nav = () => {
           </li>
           <li>
             <Link to="/favorite">
-              Favorite Events <span className={classes.badge}>{favCtx.favAmount}</span>{" "}
+              Favorite Events{" "}
+              <span className={classes.badge}>{favCtx.favAmount}</span>{" "}
             </Link>
           </li>
         </ul>

@@ -38,10 +38,33 @@ const AllEvents = () => {
       });
   }, []);
 
+  const [search, setSearch] = useState("");
+
+  const searchHandler = (event) => {
+    const input = event.target.value;
+
+    setSearch(input);
+  };
+
+  let content = event.filter((eventData) => {
+    if (search === null) {
+      return eventData;
+    } else if (eventData.title.toLowerCase().includes(search.toLowerCase())) {
+      return eventData;
+    }
+    return null;
+  });
+
   return (
     <div className={classes.maincontainer}>
+      <input
+        type="text"
+        placeholder="search event"
+        className={classes.navsearchbar}
+        onChange={searchHandler}
+      />
       {loading && <Spinner />}
-      {!loading && <EventList event={event} />}
+      {!loading && <EventList event={content} />}
     </div>
   );
 };
