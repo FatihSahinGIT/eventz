@@ -1,8 +1,19 @@
 @font-face {
-  font-family: Syne;
+  font-family: SyneHeader;
   font-weight: 500;
   font-style: normal;
-  src: local("./fonts/Syne/Syne-ExtraBold.ttf") format("truetype");
+  src: url("./fonts/Syne/Syne-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: x;
+  font-weight: 500;
+  font-style: normal;
+  src: url("./fonts/Syne/Syne-Bold.ttf") format("truetype");
+}
+
+h1, .navlogo {
+  font-family: SyneHeader;
 }
 
 * {
@@ -10,7 +21,7 @@
   padding: 0;
   box-sizing: border-box;
   height: 100%;
-  font-family: Syne, serif;
+  font-family: x;
   list-style: none;
   text-decoration: none;
 }
