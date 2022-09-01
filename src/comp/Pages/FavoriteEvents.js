@@ -6,6 +6,7 @@ import FavContext from "../../context/fav-context";
 import EventList from "../../EventList";
 
 import classes from "../style/FavoriteEvents.module.css";
+import classesEv from "../style/EventItem.module.css";
 
 const FavoriteEvents = (props) => {
   const favCtx = useContext(FavContext);
@@ -23,10 +24,11 @@ const FavoriteEvents = (props) => {
   }
 
   return (
-    <div className={classes.favmain}>
-      <h1 className={classes.header}>Your Favorites</h1>
-      <div className={classes.favcontent}>{content}</div>
-    </div>
+    <>
+      <div className={classesEv.eventitem}>
+        <div className={classes.favcontent}>{content}</div>
+      </div>
+    </>
   );
 };
 

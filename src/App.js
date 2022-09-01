@@ -15,6 +15,9 @@ const App = () => {
       </header>
 
       <Switch>
+        <Route path="/" exact>
+          <AllEvents />
+        </Route>
         <Route path="/eventz" exact>
           <AllEvents />
         </Route>
